@@ -3,12 +3,12 @@ class ProblemD {
         var request = readInt()
 
         while (request-- > 0) {
-            var clients = readInt()
-            var coins: List<Long> = readListLong().sorted()
+            val clients = readInt()
+            val coins: List<Long> = readListLong().sorted()
             var clientsWWithMoney = 0
 
             // Находим оптимальную стоимость одного гамбургера
-            var priceOfBurger = coins.find { it >= coins.sum() / clients }!!
+            val priceOfBurger = coins.find { it >= coins.sum() / clients }!!
 
             // Находим колличество клиентов, способных заплатить за бургер и суммируем их
             for (i in coins) {

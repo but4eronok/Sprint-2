@@ -1,8 +1,8 @@
 class ProblemC {
 
     fun main() {
-        var numberOfStudents = readInt()
-        var studentsSkills: IntArray = readIntArray(numberOfStudents)
+        val numberOfStudents = readInt()
+        val studentsSkills: IntArray = readIntArray(numberOfStudents)
         var numberOfTasks = 0
 
         studentsSkills.sort()
